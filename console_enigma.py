@@ -12,7 +12,7 @@ def selectMachine():
     machines = fct.machines()
     for i in range(len(machines)):
       print(f"{i+1}. {machines[i]}")
-  
+
     try:
       inpt = int(input())
     except Exception:
@@ -26,7 +26,7 @@ def selectMachine():
         break
       else:
         printBadInput()
-  
+
   return machine
 
 def enigma():
@@ -42,4 +42,6 @@ def enigma():
       machine = selectMachine()
       machine.menu()
 
-enigma()
+
+if __name__ == "__main__":
+    enigma()
